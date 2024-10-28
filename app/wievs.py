@@ -1,8 +1,5 @@
-from flask import Flask, request, url_for, redirect, render_template, abort
-
-app = Flask(__name__)
-app.config.from_pyfile('config.py')
-
+from flask import  request, url_for, redirect, render_template, abort
+from app import app
 @app.route('/')
 def main():
     return render_template ("base.html")
@@ -52,7 +49,3 @@ def get_post(id):
 @app.route('/resume')
 def resume():
     return render_template('resume.html', title='Моє резюме')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
