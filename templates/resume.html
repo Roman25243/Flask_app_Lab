@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section id="about" class="mt-5">
+        <h2>Про себе</h2>
+        <p> Я програміст-початківець, який активно навчається та розвивається у сфері розробки.  Мене цікавить як бекенд, так і фронтенд, і я прагну отримати практичний досвід через реальні проекти та власні експерименти. </p>
+        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile Image" class="img-fluid rounded">
+    </section>
+
+    <section id="education" class="mt-5">
+        <h2>Освіта</h2>
+        <ul>
+            <li>Прикарпатський Національний Університет імені В. Стефаника, Бакалавр</li>
+            <li>Інженерія Програмного Забезпечення</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="mt-5">
+        <h2>Навички</h2>
+        <ul>
+            <li>Python</li>
+                <li>Django/Flask</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>SQL</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="mt-5">
+        <h2>Проєкти</h2>
+        <ul>
+            <li><strong>Spring project</strong> Cтворення бекенду на фреймворку Spring</li>
+            
+        </ul>
+    </section>
+{% endblock %}
