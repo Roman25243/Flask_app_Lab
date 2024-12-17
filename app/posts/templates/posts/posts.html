@@ -20,7 +20,7 @@
                     <p class="card-text">{{ post.content[:20] }}...</p>
                     <p>
                         <small>Author: {{ post.author }}</small><br>
-                        <small>Published: {{ post.publication_date }}</small>
+                        <small>Published: {{ post.posted.strftime('%Y-%m-%d %H:%M') }}</small>
                     </p>
                     <a href="{{ url_for('.detail_post', id=post.id) }}" class="btn btn-primary">Read More</a>
                 </div>
